@@ -1,0 +1,515 @@
+playername = game.Players.LocalPlayer.Name
+rconsolename("Scripting Hub | Made By builderpremiumvip")
+rconsoleprint("Hello ")
+rconsoleprint(playername)
+rconsoleprint("!")
+rconsoleprint(" Please Enter Key:")
+keyinput = rconsoleinput("a")
+if (keyinput == "ok") then
+	rconsoleinfo("Correct Key!")
+	wait(5)
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local InsertedObjects = Instance.new("ScreenGui")
+local Intro = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local cursor = Instance.new("ImageButton")
+local TopRightTitle = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local GuiCredit = Instance.new("TextLabel")
+local X = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local cross = Instance.new("ImageButton")
+local Button = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Main = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_4 = Instance.new("UICorner")
+local TopRightTitle_2 = Instance.new("TextLabel")
+local X_2 = Instance.new("Frame")
+local UIGradient_4 = Instance.new("UIGradient")
+local UICorner_5 = Instance.new("UICorner")
+local cross_2 = Instance.new("ImageButton")
+local PlayerName = Instance.new("TextLabel")
+local PlayerIcon = Instance.new("ImageLabel")
+local cursor_2 = Instance.new("ImageButton")
+local Converted = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Shadow = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local HandMade = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Shadow_2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+InsertedObjects.Name = "InsertedObjects"
+InsertedObjects.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Intro.Name = "Intro"
+Intro.Parent = InsertedObjects
+Intro.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Intro.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Intro.BorderSizePixel = 0
+Intro.Position = UDim2.new(0.272606969, 0, 0.239237398, 0)
+Intro.Size = UDim2.new(0, 546, 0, 424)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 170, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(187, 152, 255))}
+UIGradient.Parent = Intro
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Intro
+
+cursor.Name = "cursor"
+cursor.Parent = Intro
+cursor.BackgroundTransparency = 1.000
+cursor.Position = UDim2.new(0.0119445622, 0, 0.0297146738, 0)
+cursor.Size = UDim2.new(0, 38, 0, 38)
+cursor.ZIndex = 2
+cursor.Image = "rbxassetid://6764432293"
+cursor.ImageRectOffset = Vector2.new(400, 0)
+cursor.ImageRectSize = Vector2.new(100, 100)
+
+TopRightTitle.Name = "TopRightTitle"
+TopRightTitle.Parent = Intro
+TopRightTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopRightTitle.BackgroundTransparency = 1.000
+TopRightTitle.Position = UDim2.new(0.0799092054, 0, 0.0363781601, 0)
+TopRightTitle.Size = UDim2.new(0, 139, 0, 32)
+TopRightTitle.Font = Enum.Font.Roboto
+TopRightTitle.Text = "Scripting Hub"
+TopRightTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+TopRightTitle.TextScaled = true
+TopRightTitle.TextSize = 14.000
+TopRightTitle.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = Intro
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.253901899, 0, 0.235991165, 0)
+Title.Size = UDim2.new(0, 269, 0, 157)
+Title.Font = Enum.Font.Roboto
+Title.Text = "Scripting Hub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+GuiCredit.Name = "GuiCredit"
+GuiCredit.Parent = Intro
+GuiCredit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiCredit.BackgroundTransparency = 1.000
+GuiCredit.Position = UDim2.new(0.315097928, 0, 0.583533466, 0)
+GuiCredit.Size = UDim2.new(0, 203, 0, 51)
+GuiCredit.Font = Enum.Font.Roboto
+GuiCredit.Text = "Gui Made By Interface Tools Plugin"
+GuiCredit.TextColor3 = Color3.fromRGB(255, 255, 255)
+GuiCredit.TextScaled = true
+GuiCredit.TextSize = 14.000
+GuiCredit.TextWrapped = true
+
+X.Name = "X"
+X.Parent = Intro
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BorderColor3 = Color3.fromRGB(27, 42, 53)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.902930379, 0, 0.0165094342, 0)
+X.Size = UDim2.new(0, 46, 0, 48)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(224, 43, 39)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(168, 3, 3))}
+UIGradient_2.Parent = X
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = X
+
+cross.Name = "cross"
+cross.Parent = X
+cross.BackgroundTransparency = 1.000
+cross.LayoutOrder = 5
+cross.Position = UDim2.new(-0.0195829868, 0, -0.001732409, 0)
+cross.Size = UDim2.new(0, 46, 0, 48)
+cross.ZIndex = 2
+cross.Image = "rbxassetid://6764432408"
+cross.ImageRectOffset = Vector2.new(200, 600)
+cross.ImageRectSize = Vector2.new(50, 50)
+
+Button.Name = "Button"
+Button.Parent = Intro
+Button.BackgroundColor3 = Color3.fromRGB(167, 137, 255)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.336799145, 0, 0.704543173, 0)
+Button.Size = UDim2.new(0, 180, 0, 45)
+Button.ZIndex = 2
+Button.Font = Enum.Font.GothamMedium
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = Button
+
+TextLabel.Parent = Button
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.544444442, 0)
+TextLabel.Size = UDim2.new(1, -20, 1, -20)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.GothamMedium
+TextLabel.Text = "Open Scripting Hub!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = InsertedObjects
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.272955209, 0, 0.239237398, 0)
+Main.Size = UDim2.new(0, 546, 0, 424)
+Main.Visible = false
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 170, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(187, 152, 255))}
+UIGradient_3.Parent = Main
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = Main
+
+TopRightTitle_2.Name = "TopRightTitle"
+TopRightTitle_2.Parent = Main
+TopRightTitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopRightTitle_2.BackgroundTransparency = 1.000
+TopRightTitle_2.Position = UDim2.new(0.0799092054, 0, 0.0363781601, 0)
+TopRightTitle_2.Size = UDim2.new(0, 139, 0, 32)
+TopRightTitle_2.Font = Enum.Font.Roboto
+TopRightTitle_2.Text = "Scripting Hub"
+TopRightTitle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TopRightTitle_2.TextScaled = true
+TopRightTitle_2.TextSize = 14.000
+TopRightTitle_2.TextWrapped = true
+
+X_2.Name = "X"
+X_2.Parent = Main
+X_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+X_2.BorderSizePixel = 0
+X_2.Position = UDim2.new(0.902930379, 0, 0.0165094342, 0)
+X_2.Size = UDim2.new(0, 46, 0, 48)
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(224, 43, 39)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(168, 3, 3))}
+UIGradient_4.Parent = X_2
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = X_2
+
+cross_2.Name = "cross"
+cross_2.Parent = X_2
+cross_2.BackgroundTransparency = 1.000
+cross_2.LayoutOrder = 5
+cross_2.Position = UDim2.new(-0.0195829868, 0, -0.001732409, 0)
+cross_2.Size = UDim2.new(0, 46, 0, 48)
+cross_2.ZIndex = 2
+cross_2.Image = "rbxassetid://6764432408"
+cross_2.ImageRectOffset = Vector2.new(200, 600)
+cross_2.ImageRectSize = Vector2.new(50, 50)
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = Main
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.Position = UDim2.new(0.534498513, 0, 0.483490527, 0)
+PlayerName.Size = UDim2.new(0, 200, 0, 50)
+PlayerName.Font = Enum.Font.SourceSans
+PlayerName.Text = "Hello {User}!"
+PlayerName.TextColor3 = Color3.fromRGB(89, 75, 126)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14.000
+PlayerName.TextWrapped = true
+
+PlayerIcon.Name = "PlayerIcon"
+PlayerIcon.Parent = Main
+PlayerIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerIcon.BackgroundTransparency = 1.000
+PlayerIcon.Position = UDim2.new(0.633699656, 0, 0.179245293, 0)
+PlayerIcon.Size = UDim2.new(0, 100, 0, 100)
+PlayerIcon.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+cursor_2.Name = "cursor"
+cursor_2.Parent = Main
+cursor_2.BackgroundTransparency = 1.000
+cursor_2.Position = UDim2.new(0.0119445622, 0, 0.0297146738, 0)
+cursor_2.Size = UDim2.new(0, 38, 0, 38)
+cursor_2.ZIndex = 2
+cursor_2.Image = "rbxassetid://6764432293"
+cursor_2.ImageRectOffset = Vector2.new(400, 0)
+cursor_2.ImageRectSize = Vector2.new(100, 100)
+
+Converted.Name = "Converted"
+Converted.Parent = Main
+Converted.BackgroundColor3 = Color3.fromRGB(164, 136, 227)
+Converted.BorderSizePixel = 0
+Converted.Position = UDim2.new(0.0241877437, 0, 0.159939304, 0)
+Converted.Size = UDim2.new(0, 180, 0, 45)
+Converted.ZIndex = 2
+Converted.Font = Enum.Font.GothamMedium
+Converted.Text = ""
+Converted.TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted.TextScaled = true
+Converted.TextSize = 14.000
+Converted.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = Converted
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Converted
+Shadow.BackgroundColor3 = Color3.fromRGB(90, 74, 124)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = Shadow
+
+TextLabel_2.Parent = Converted
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.544444442, 0)
+TextLabel_2.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.GothamMedium
+TextLabel_2.Text = "Converted Scripts"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+HandMade.Name = "HandMade"
+HandMade.Parent = Main
+HandMade.BackgroundColor3 = Color3.fromRGB(164, 136, 227)
+HandMade.BorderSizePixel = 0
+HandMade.Position = UDim2.new(0.0241877418, 0, 0.308184803, 0)
+HandMade.Size = UDim2.new(0, 180, 0, 45)
+HandMade.ZIndex = 2
+HandMade.Font = Enum.Font.GothamMedium
+HandMade.Text = ""
+HandMade.TextColor3 = Color3.fromRGB(255, 255, 255)
+HandMade.TextScaled = true
+HandMade.TextSize = 14.000
+HandMade.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = HandMade
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = HandMade
+Shadow_2.BackgroundColor3 = Color3.fromRGB(90, 74, 124)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Size = UDim2.new(1, 0, 1, 4)
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = Shadow_2
+
+TextLabel_3.Parent = HandMade
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.544444442, 0)
+TextLabel_3.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.GothamMedium
+TextLabel_3.Text = "Hand Made Scripts"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+-- Scripts:
+
+local function GNUDW_fake_script() -- cross.GuiClick_Script 
+	local script = Instance.new('LocalScript', cross)
+
+	function OnClicked() 
+	script.Parent.Parent.Parent:Destroy()
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(GNUDW_fake_script)()
+local function ZJGKQ_fake_script() -- Intro.LocalScript 
+	local script = Instance.new('LocalScript', Intro)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(ZJGKQ_fake_script)()
+local function MJPPG_fake_script() -- Button.GuiClick_Script 
+	local script = Instance.new('LocalScript', Button)
+
+	function OnClicked() 
+		script.Parent.Parent.TopRightTitle.Text = "Verify"
+		script.Parent.Parent.Title.Text = "Verifying You"
+		wait(1)
+		script.Parent.Parent.Title.Text = "Verifying You."
+		wait(1)
+		script.Parent.Parent.Title.Text = "Verifying You.."
+		wait(1)
+		script.Parent.Parent.Title.Text = "Verifying You..."
+		if game.Players.LocalPlayer.Name == "Disunize" then
+			wait(2)
+			script.Parent.Parent.Title.Text = " thanks for using the hub, digit legend!"
+			wait(3)
+			script.Parent.Parent.Visible = false
+			script.Parent.Parent.Parent.Main.Visible = true
+		elseif game.Players.LocalPlayer.Name == "builderpremiumvip" then
+			wait(2)
+			script.Parent.Parent.Title.Text = "owner testing??!?!?"
+			wait(3)
+			script.Parent.Parent.Visible = false
+			script.Parent.Parent.Parent.Main.Visible = true
+		else
+			wait(2)
+			script.Parent.Parent.Title.Text = " Verified!"
+			wait(3)
+			script.Parent.Parent.Visible = false
+			script.Parent.Parent.Parent.Main.Visible = true
+		end
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(MJPPG_fake_script)()
+local function JSGKXSD_fake_script() -- cross_2.GuiClick_Script 
+	local script = Instance.new('LocalScript', cross_2)
+
+	function OnClicked() 
+	script.Parent.Parent.Parent:Destroy()
+	end 
+	
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(JSGKXSD_fake_script)()
+local function EAXU_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(EAXU_fake_script)()
+local function EHPFC_fake_script() -- PlayerName.LocalScript 
+	local script = Instance.new('LocalScript', PlayerName)
+
+	if game.Players.LocalPlayer.Name == "Disunize" then
+		script.Parent.Text = "Hello Tester "..game.Players.LocalPlayer.Name.. "!"
+	elseif game.Players.LocalPlayer.Name == "builderpremiumvip" then
+		script.Parent.Text = "Hello Owner "..game.Players.LocalPlayer.Name.. "!"
+	else
+		script.Parent.Text = "Hello "..game.Players.LocalPlayer.Name.. "!"
+	end
+end
+coroutine.wrap(EHPFC_fake_script)()
+local function UYFQTGW_fake_script() -- PlayerIcon.LocalScript 
+	local script = Instance.new('LocalScript', PlayerIcon)
+
+	script.Parent.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&userId=" .. game.Players.LocalPlayer.UserId
+end
+coroutine.wrap(UYFQTGW_fake_script)()
+	else
+	rconsoleerr("Wrong Key!")
+	wait(5)
+	rconsoleclose()
+end
